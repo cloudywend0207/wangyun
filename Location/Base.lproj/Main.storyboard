@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cOv-cP-rCw"/>
+                        <viewControllerLayoutGuide type="bottom" id="S61-jD-JPC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前位置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG4-Ns-RSC">
+                                <rect key="frame" x="100" y="114" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gFU-QA-Fh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeC-8n-EM4">
+                                <rect key="frame" x="30" y="224" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Po9-o6-18W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfI-WL-Dug">
+                                <rect key="frame" x="30" y="324" width="315" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Wuq-sU-gM1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uG4-Ns-RSC" firstAttribute="top" secondItem="cOv-cP-rCw" secondAttribute="bottom" constant="94" id="06a-LB-6i9"/>
+                            <constraint firstAttribute="trailing" secondItem="uG4-Ns-RSC" secondAttribute="trailing" constant="100" id="5hc-7g-xd1"/>
+                            <constraint firstItem="CfI-WL-Dug" firstAttribute="top" secondItem="qeC-8n-EM4" secondAttribute="bottom" constant="50" id="8Fh-BB-WUv"/>
+                            <constraint firstItem="qeC-8n-EM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Izk-eh-qm6"/>
+                            <constraint firstItem="qeC-8n-EM4" firstAttribute="top" secondItem="uG4-Ns-RSC" secondAttribute="bottom" constant="60" id="K1h-VO-w6f"/>
+                            <constraint firstAttribute="trailing" secondItem="qeC-8n-EM4" secondAttribute="trailing" constant="30" id="dJG-8l-y2w"/>
+                            <constraint firstItem="uG4-Ns-RSC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="eZt-C3-V7t"/>
+                            <constraint firstAttribute="trailing" secondItem="CfI-WL-Dug" secondAttribute="trailing" constant="30" id="kmd-1Z-ITt"/>
+                            <constraint firstItem="CfI-WL-Dug" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="xXy-kR-zrK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLocationLabel" destination="CfI-WL-Dug" id="ZD0-6o-BcY"/>
+                        <outlet property="licationLabel" destination="qeC-8n-EM4" id="gVs-Jn-6m9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="87.706146926536732"/>
+        </scene>
+    </scenes>
+</document>
